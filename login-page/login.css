@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    --primary-color: cornflowerblue;
+    --secundary-color: rgb(0, 0, 0) ;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--secundary-color);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 7rem;
+    width: 25rem;
+    height: 30rem;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.186);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secundary-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+::-webkit-input-placeholder{
+    color: rgb(71, 66, 66);
+}
+
+#name{
+    margin-bottom: 3rem;
+}
+
+form input {
+    width: 22rem;
+    height: 2.3rem;
+    border: 3px solid var(--secundary-color);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+    background: transparent;
+}
+
+button{
+    width: 23rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2rem;   
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secundary-color);
+    text-decoration: none ;
+    font-weight: bold;
+    text-shadow: 1px solid black;
+}
+
+#password {
+    margin-bottom: 2rem;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secundary-color);
+    font-size: 2rem;
+}
+
+.titu{
+    margin-top: 5rem;
+}

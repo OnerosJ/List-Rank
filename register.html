@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <div class="main">
+        <h2>Registro</h2>
+    <form onsubmit="register()" class="register">
+        
+        <label for="nome">Nome</label>
+        <input id="name" type="text" name="nome" placeholder="Digite seu nome">
+        <label for="senha">Senha</label>
+        <input id="password" type="password" name="senha" placeholder="Digite sua senha">
+        <input id="confirm-password" type="password" name="senha" placeholder="Confirme sua senha">
+        <button type="submit">Registrar</button>
+    </form>
+    <a href="login-page/login.html">Ja tem uma conta ?</a>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
