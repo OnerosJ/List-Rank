@@ -103,3 +103,15 @@ h2{
 .titu{
     margin-top: 5rem;
 }
+
+namea{
+    width: 23rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

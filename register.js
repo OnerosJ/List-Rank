@@ -19,7 +19,12 @@ function register() {
 
     let userRegister = {
     name:"",
-    password:""
+    password:"",
+    tasks:{
+        task: [],
+        check: []
+    },
+    taskCount:0
     }
 
     if (name.value == "" || password.value == "" || confirmPassword.value == ""){

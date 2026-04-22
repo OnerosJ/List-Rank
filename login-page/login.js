@@ -8,17 +8,13 @@ let users =JSON.parse(localStorage.getItem("@users"))
 function login() {
     event.preventDefault()
     let loginUser = false
-
-    
     loginUser =  users.find((item) =>{
         if (item.name == name.value && item.password == password.value) {
+            localStorage.setItem("@user" , name.value)
             main.innerHTML = ""
             loginSuces()
         }
     })
-
-
-    event.preventDefault()
 }
 
 function loginSuces() {
@@ -31,6 +27,9 @@ function loginSuces() {
     button.textContent = buttonText
     main.appendChild(title)
     main.appendChild(button)
+    button.onclick = callPage
+}
 
-
+function callPage(){
+    window.location.href = "/list-page/list.html" 
 }
