@@ -2,10 +2,14 @@ let input = document.querySelector("input")
 let divTask = document.getElementById("tarefas")
 let users = JSON.parse(localStorage.getItem("@users"))
 let user = localStorage.getItem("@user")
+let title = document.getElementById("title")
+
 
 let userNow = users.find((nome) => {
     return nome.name == user
 })
+
+title.textContent = "Lista de " + user
 
 
 function renderTask() {

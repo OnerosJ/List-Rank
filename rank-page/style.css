@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    --verde: #4EB879;
+    --cinza-claro:#484C69;
+    --cinza-escuro:#2B2E43;
+}
+
+header{
+    background-color: var(--cinza-claro);
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.back{
+    width: 2rem;
+    margin-left: 2rem;
+    transform: 1.4s;
+    transition: 2s;
+}
+
+.back a {
+    font-size: 2rem;
+    background-color:var(--cinza-escuro);
+    border-radius: 10px;
+    border: 3px solid var(--verde);
+    font-weight: bold;
+    transform: 1.4s;
+    transition: 1s;
+}
+
+.back:hover a{
+    scale:200%;
+    background-color: var(--cinza-claro);
+    color: var(--verde);
+}
+
+
+.quit{
+    width: 5rem;
+    margin-right: 2rem;
+    transform: 1.4s;
+    transition: 2s;
+}
+
+.quit a {
+    font-size: 2rem;
+    background-color:var(--cinza-escuro);
+    border-radius: 10px;
+    border: 3px solid var(--verde);
+    font-weight: bold;
+    transform: 1.4s;
+    transition: 1s;
+}
+
+.quit:hover a{
+    scale:200%;
+    background-color: var(--cinza-claro);
+    color: rgb(255, 0, 72);
+    border: 2px solid rgb(255, 0, 72);
+}
+
+#title{
+    color: white;
+}
+
+main{
+    background-color: var(--cinza-escuro);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+h2{
+    padding-top: 7rem;
+    font-size: 2rem;
+    color: white;
+
+}
+
+.div-style {
+    margin-top: 1rem;
+    width: 30rem;
+    height: 5rem;
+    background-color: var(--cinza-claro);
+    border-radius: 20px;
+    border: 3px solid var(--verde);
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.div-style p {
+    font-size: 2rem;
+    color: white;
+}

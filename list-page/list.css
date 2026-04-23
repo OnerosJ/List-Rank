@@ -62,9 +62,14 @@ main{
     display: flex;
     width: 100vw;
     align-items: start;
-    justify-content: center;
+    justify-content: space-around;
     background-color: var(--cinza-escuro);
     height: 100vh
+}
+
+#title {
+    margin-left: 15rem;
+    color: white;
 }
 
 .quit{
