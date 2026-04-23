@@ -24,9 +24,6 @@ function renderRank() {
     let qordem = []
     let nordem = []
 
-
-
-
         while(quantiaUser.length > 0 ){
             let maior = quantiaUser[0]
             let indexMaior = 0
@@ -47,16 +44,13 @@ function renderRank() {
 
     qordem.map((item,i)=>{
         let p = document.createElement("p")
-        let pText = (i+1)+ " Lugar: " + nordem[i] + " com " + item + " tarefas"
+        let div = document.createElement("div")
+        div.className = "div-style"
+        let pText = (i+1)+ "º   Lugar: " + nordem[i] + " com " + item + " tarefas"
         p.textContent = pText
-        rankDiv.append(p)
+        rankDiv.append(div)
+        div.append(p)
     })
-    
-
-
-
-
-
 }
 
 renderRank()

@@ -12,6 +12,7 @@ function renderTask() {
     userNow.tasks.task.map((item,i)=>{
     let taskP = document.createElement("p")
     let newDivTask = document.createElement("div")
+    newDivTask.className = "div-style"
     let risktask = document.createElement("a")
 
     if (userNow.tasks.check[i]) {
@@ -20,12 +21,14 @@ function renderTask() {
     
     if (userNow.tasks.check[i]) {
     risktask.textContent = "Apagar"
+    risktask.className = "apagar"
     risktask.addEventListener("click" , ()=>{
     deleteTask(i)
     })
     taskP.textContent = item       
     }else{
     risktask.textContent = "Concluir"
+    risktask.className = "concluir"
     risktask.addEventListener("click" , ()=>{
     markT(i)
     })

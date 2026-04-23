@@ -16,7 +16,7 @@ function register() {
     event.preventDefault()
 
     let userNameCheck = ""
-
+    //driar user
     let userRegister = {
     name:"",
     password:"",
@@ -27,16 +27,19 @@ function register() {
     taskCount:0
     }
 
+    //verificar campos vazios
     if (name.value == "" || password.value == "" || confirmPassword.value == ""){
         alert("Os campos tem que ser preencidos")
         return
     }
 
+    //confirmar seenha
     if (!(password.value == confirmPassword.value) ) {
         alert("nao")
         return
     }
 
+    //verificar usuario existentee
     userNameCheck = users.find((valor)=> {
         
         if(valor.name == name.value){
@@ -59,7 +62,6 @@ function register() {
     name.value = ''
     password.value = ""
     confirmPassword.value = ""
-
 
     console.log(users);
     
